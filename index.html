@@ -50,7 +50,52 @@
         </div>
       </div>
     </header>
-    <main class="content" id="reservar-mesa"></main>
+    <main class="content" id="reservar-mesa">
+      <div class="form-container">
+        <h1 class="form-container__title">Reservar una mesa</h1>
+        <form action="#" method="get" class="form">
+          <label class="form__label" for="nombre">Nombre *</label>
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre"
+            class="form__input"
+          />
+          <label class="form__label" for="numeroComensales"
+            >Número de comensales *</label
+          >
+          <input
+            type="number"
+            min="1"
+            max="8"
+            id="numeroComensales"
+            placeholder="1-8"
+            class="form__input"
+          />
+          <label class="form__label" for="FechayHora">Fecha y hora *</label>
+          <input type="date" id="FechayHora" class="form__input" />
+          <label class="form__label" for="e-mail">Nombre *</label>
+          <input
+            type="email"
+            id="e-mail"
+            placeholder="email@email.com"
+            class="form__input"
+          />
+          <div class="form__buttons">
+            <button type="submit" class="form__button form__button--submit">
+              Reservar una mesa
+            </button>
+          </div>
+          <div class="form__checkebox">
+            <input
+              type="checkbox"
+              id="términos"
+              class="form__checkebox-input"
+            />Acepto los términos de uso
+          </div>
+        </form>
+      </div>
+    </main>
     <footer class="footer" id="Contactos"></footer>
   </body>
 </html>
