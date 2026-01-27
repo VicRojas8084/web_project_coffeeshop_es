@@ -58,6 +58,10 @@ body {
   color: #444;
 }
 
+.nav-link:hover {
+  color: #ff976b;
+}
+
 .header-title {
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;

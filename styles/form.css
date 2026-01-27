@@ -5,10 +5,13 @@
   background-position: center;
   background-size: cover;
   position: relative;
+
+  z-index: 10; /* ayuda a la sección footer a que su círculo */
+  overflow: hidden; /* no se vea en esta sección */
+
   display: flex;
   flex-direction: column;
   min-height: 720px;
-
   align-items: center;
 }
 
@@ -47,7 +50,7 @@
 
 .form-fieldset__input {
   border-radius: 4px;
-  width: 385px;
+  width: 100%;
   height: 60px;
   padding: 15px 20px;
   box-sizing: border-box;
@@ -75,6 +78,10 @@
   color: white;
 }
 
+.form__button:hover {
+  opacity: 0.7;
+}
+
 .checkbox-container {
   display: flex;
   align-items: center;
@@ -86,6 +93,7 @@
 .checkbox {
   width: 20px;
   height: 20px;
+  border-color: #4f4f4f;
 }
 
 .checkbox-text {
