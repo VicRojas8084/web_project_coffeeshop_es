@@ -75,12 +75,22 @@
   color: white;
 }
 
-.form__checkbox {
+.checkbox-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* espacio entre chackbox y texto */
+  margin-bottom: 120px;
 }
 
-.form__checkbox-input {
-  display: flex;
-  border-radius: 2px;
-  margin-bottom: 120px;
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
