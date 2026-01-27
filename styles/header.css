@@ -1,4 +1,4 @@
-body {
+.page {
   margin: 0 auto;
   min-width: 1100px;
   max-width: 1600px;
@@ -41,7 +41,7 @@ body {
   height: 39px;
 }
 
-.nav-links {
+.nav__links {
   display: flex;
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
@@ -84,7 +84,7 @@ body {
   color: #ff976b;
 }
 
-.header-description {
+.header__description {
   display: flex;
   font-family: "Noto Serif", "Arial", sans-serif;
   font-style: normal;
@@ -96,7 +96,7 @@ body {
   max-width: 683px;
 }
 
-.header-image {
+.header__image {
   position: absolute;
   right: 5px;
   top: 124px;
