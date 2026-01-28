@@ -50,7 +50,8 @@
   line-height: 20px;
   column-gap: 20px;
   list-style: none;
-  margin: 30px 26px;
+  margin: 30px 26px 0 0;
+  padding: 0;
 }
 
 .nav-link {
@@ -62,17 +63,24 @@
   color: #ff976b;
 }
 
-.header-title {
+.header__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  max-width: 709px;
+}
+
+.header__title {
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 58px;
   line-height: 72px;
   letter-spacing: -1px;
+
   margin-top: 0;
-  margin-left: 80px;
   margin-bottom: 14px;
-  max-width: 709px;
+  width: 100%;
 }
 
 .first-half-title {
@@ -86,13 +94,13 @@
 
 .header__description {
   display: flex;
-  font-family: "Noto Serif", "Arial", sans-serif;
+  font-family: "Noto Serif", "Times New Roman", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  margin-left: 80px;
-  margin-top: 14px;
+
+  margin: 14px 0 0 0;
   max-width: 683px;
 }
 
@@ -106,19 +114,11 @@
 }
 
 .header-info {
-  position: absolute;
-  bottom: 40px;
-  left: 80px;
-  right: 80px;
-
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-}
 
-.header-hours .info-text {
-  display: block;
-  margin-bottom: 2px;
+  margin: 203px 80px 40px 80px;
 }
 
 .info-text {
@@ -130,8 +130,6 @@
   color: #6f6f6f;
 }
 
-.direccion {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.header-hours .info-text {
+  display: flex;
 }

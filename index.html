@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/index.css" />
@@ -34,14 +34,16 @@
           <li><a href="#contactos" class="nav-link">Contactos</a></li>
         </ul>
       </nav>
-      <h1 class="header-title">
-        <span class="first-half-title">Café de especialidad</span><br />
-        en Triple Peaks
-      </h1>
-      <p class="header__description">
-        ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-        para darte energía y motivar tu creatividad.
-      </p>
+      <div class="header__content">
+        <h1 class="header__title">
+          <span class="first-half-title">Café de especialidad</span><br />
+          en Triple Peaks
+        </h1>
+        <p class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y motivar tu creatividad.
+        </p>
+      </div>
       <img
         class="header__image"
         src="./images/inside_coffee_shop.png"
@@ -53,65 +55,65 @@
           <span class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</span>
           <span class="info-text">Sábados y Domingos (de 11:00h a 18:00h)</span>
         </div>
-        <div class="info-text" class="direccion">
-          Avenida del Éxito 200, Ciudad Triple Peaks
-        </div>
+        <div class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</div>
       </div>
     </header>
     <main class="content" id="reservar-mesa">
-      <h1 class="content__title">Reservar una mesa</h1>
-      <form action="#" method="get" class="form-container">
-        <div class="form-fieldset">
-          <label class="form-fieldset__label" for="nombre">Nombre *</label>
-          <input
-            type="text"
-            id="nombre"
-            placeholder="Nombre"
-            required
-            class="form-fieldset__input"
-          />
-          <label class="form-fieldset__label" for="numeroComensales"
-            >Número de comensales *</label
-          >
-          <input
-            type="number"
-            min="1"
-            max="8"
-            id="numeroComensales"
-            placeholder="1-8"
-            required
-            class="form-fieldset__input"
-          />
-          <label class="form-fieldset__label" for="FechayHora"
-            >Fecha y hora *</label
-          >
-          <input
-            type="datetime-local"
-            id="FechayHora"
-            required
-            class="form-fieldset__input"
-          />
-          <label class="form-fieldset__label" for="e-mail"
-            >Tu correo electrónico *</label
-          >
-          <input
-            type="email"
-            id="e-mail"
-            placeholder="email@email.com"
-            required
-            class="form-fieldset__input"
-          />
-        </div>
-        <div class="form__buttons">
-          <button type="submit" class="form__button form__button--submit">
-            Reservar una mesa
-          </button>
-        </div>
-        <label class="checkbox-container">
-          <input type="checkbox" class="checkbox" />
-          <span class="checkbox-text">Acepto los términos de uso</span>
-        </label>
-      </form>
+      <section class="reservation">
+        <h1 class="content__title">Reservar una mesa</h1>
+        <form action="#" method="get" class="form-container">
+          <div class="form-fieldset">
+            <label class="form-fieldset__label" for="nombre">Nombre *</label>
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Nombre"
+              required
+              class="form-fieldset__input"
+            />
+            <label class="form-fieldset__label" for="numeroComensales"
+              >Número de comensales *</label
+            >
+            <input
+              type="number"
+              min="1"
+              max="8"
+              id="numeroComensales"
+              placeholder="1-8"
+              required
+              class="form-fieldset__input"
+            />
+            <label class="form-fieldset__label" for="FechayHora"
+              >Fecha y hora *</label
+            >
+            <input
+              type="datetime-local"
+              id="FechayHora"
+              required
+              class="form-fieldset__input"
+            />
+            <label class="form-fieldset__label" for="e-mail"
+              >Tu correo electrónico *</label
+            >
+            <input
+              type="email"
+              id="e-mail"
+              placeholder="email@email.com"
+              required
+              class="form-fieldset__input"
+            />
+          </div>
+          <div class="form__buttons">
+            <button type="submit" class="form__button form__button--submit">
+              Reservar una mesa
+            </button>
+          </div>
+          <label class="checkbox-container">
+            <input type="checkbox" class="checkbox" />
+            <span class="checkbox-text">Acepto los términos de uso</span>
+          </label>
+        </form>
+      </section>
     </main>
     <footer class="footer" id="contactos">
       <nav class="footer__nav">

@@ -8,7 +8,9 @@
 
   z-index: 10; /* ayuda a la sección footer a que su círculo */
   overflow: hidden; /* no se vea en esta sección */
+}
 
+.reservation {
   display: flex;
   flex-direction: column;
   min-height: 720px;
