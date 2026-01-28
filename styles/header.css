@@ -54,12 +54,12 @@
   padding: 0;
 }
 
-.nav-link {
+.nav__link {
   text-decoration: none;
   color: #444;
 }
 
-.nav-link:hover {
+.nav__link:hover {
   color: #ff976b;
 }
 
@@ -113,7 +113,7 @@
   z-index: 1;
 }
 
-.header-info {
+.header__info {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -121,7 +121,7 @@
   margin: 203px 80px 40px 80px;
 }
 
-.info-text {
+.info__text {
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -130,6 +130,6 @@
   color: #6f6f6f;
 }
 
-.header-hours .info-text {
+.header__hours .info__text {
   display: flex;
 }
