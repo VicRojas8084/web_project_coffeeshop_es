@@ -65,17 +65,17 @@
     <main class="content">
       <section class="reservation" id="reservation">
         <h2 class="reservation__title">Reservar una mesa</h2>
-        <form action="#" method="get" class="form-container">
-          <div class="form-fieldset">
-            <label class="form-fieldset__label" for="nombre">Nombre *</label>
+        <form action="#" method="get" class="reservation__form form">
+          <div class="form__fieldset">
+            <label class="form__label" for="nombre">Nombre *</label>
             <input
               type="text"
               id="nombre"
               placeholder="Nombre"
               required
-              class="form-fieldset__input"
+              class="form__input"
             />
-            <label class="form-fieldset__label" for="numeroComensales"
+            <label class="form__label" for="numeroComensales"
               >Número de comensales *</label
             >
             <input
@@ -85,18 +85,16 @@
               id="numeroComensales"
               placeholder="1-8"
               required
-              class="form-fieldset__input"
+              class="form__input"
             />
-            <label class="form-fieldset__label" for="FechayHora"
-              >Fecha y hora *</label
-            >
+            <label class="form__label" for="FechayHora">Fecha y hora *</label>
             <input
               type="datetime-local"
               id="FechayHora"
               required
-              class="form-fieldset__input"
+              class="form__input"
             />
-            <label class="form-fieldset__label" for="e-mail"
+            <label class="form__label" for="e-mail"
               >Tu correo electrónico *</label
             >
             <input
@@ -104,7 +102,7 @@
               id="e-mail"
               placeholder="email@email.com"
               required
-              class="form-fieldset__input"
+              class="form__input"
             />
           </div>
           <div class="form__buttons">
