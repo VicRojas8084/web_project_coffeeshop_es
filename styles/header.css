@@ -63,13 +63,6 @@
   color: #ff976b;
 }
 
-.header__content {
-  display: flex;
-  flex-direction: column;
-  margin-left: 80px;
-  max-width: 709px;
-}
-
 .header__title {
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
@@ -80,7 +73,8 @@
 
   margin-top: 0;
   margin-bottom: 14px;
-  width: 100%;
+  margin-left: 80px;
+  max-width: 709px;
 }
 
 .first-half-title {
@@ -100,7 +94,7 @@
   font-size: 20px;
   line-height: 30px;
 
-  margin: 14px 0 0 0;
+  margin: 14px 0 0 80px;
   max-width: 683px;
 }
 
